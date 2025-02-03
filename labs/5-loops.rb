@@ -1,8 +1,5 @@
-# To run this code, be sure your current working directory
-# is the same as where this file is located and then run:
 # ruby 5-loops.rb
 
-# EXERCISE
 # Build a deck of cards. Given the following arrays of card data,
 # use a loop to write out the cards to the screen.
 clubs = [2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King", "Ace"]
@@ -29,3 +26,9 @@ suits = ["Clubs", "Diamonds", "Hearts", "Spades"]
 # CHALLENGE #2
 # Deal a poker hand. Shuffle the deck and "deal" (i.e. display) a 5 card hand (i.e. 5 cards from the deck).
 # You will want to look at the documentation for Arrays: https://ruby-doc.org/core-2.7.0/Array.html
+
+index_rank = 0
+index_suit = 0
+if index_rank == ranks.size && index_suit ==  suits_size
+    break
+end

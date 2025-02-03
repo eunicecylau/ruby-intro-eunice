@@ -1,17 +1,30 @@
-# To run this code, be sure your current working directory
-# is the same as where this file is located and then run:
 # ruby 3-arrays.rb
 
-# EXERCISE
 # Create a "shared" shopping list with a friend
-# Create two data structures - one for your list of stuff, and one
+# 1 Create two data structures - one for your list of stuff, and one
 # for your friend, e.g. you want milk, eggs, and bacon, and
 # your friend wants beer, cookies, and apples.
-# Programmatically combine the two arrays into a single list,
-# sort the result (alphabetically), and write it to the screen.
-# If the two lists contain the same item, only show it once!
-# Lastly, display each item in the list prepended with "buy ".
+# 2 Programmatically combine the two arrays into a single list,
+# 3 sort the result (alphabetically)
+# 4 print it. If the two lists contain the same item, only show once!
+# 5 Lastly, display each item in the list prepended with "buy ".
 
-# HINTS
-# Learn to read the documentation!
+# HINTS - Learn to read the documentation!
 # https://ruby-doc.org/core-2.7.0/Array.html
+
+mylist = ["milk", "eggs", "bacon", "apples"]
+herlist = ["beer", "cookies", "apples"]
+full_list = mylist + herlist
+full_list_sort = full_list.sort
+full_list_sort_uq = full_list_sort.uniq
+puts full_list_sort_uq
+
+index = 0
+loop do
+    if index == full_list_sort_uq.size
+        break
+    end
+item = full_list_sort_uq[index]
+puts "buy #{item}"
+index = index + 1
+end
